@@ -98,7 +98,30 @@ button:hover {
 
 /* Responsive for mobile */
 @media (max-width: 700px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 95%;
+  }
+
   form {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* stack form fields */
+  }
+
+  .full,
+  .buttons {
+    grid-column: span 1;
+  }
+
+  input, select, textarea {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
   }
 }
+
